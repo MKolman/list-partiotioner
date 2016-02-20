@@ -15,21 +15,21 @@ You can either import the file or run it directly to see how some test cases run
 
 ## Example usage:
 ```python
->> from partitions import make_partiotions
+>> from partitions import make_partitions
 >> data = [1, 1, 1, 5, 6, 111, 122, 999, 1002]
->> make_partiotions(data)
+>> make_partitions(data)
 [[1, 1, 1], [5, 6], [111, 122], [999, 1002]]
->> make_partiotions(data, multiplier=1.5)
+>> make_partitions(data, multiplier=1.5)
 [[1, 1, 1, 5, 6], [111, 122], [999, 1002]]
->> make_partiotions(data, multiplier=100)
+>> make_partitions(data, multiplier=100)
 [[1, 1, 1, 5, 6, 111, 122], [999, 1002]]
->> make_partiotions(data, multiplier=1000)
+>> make_partitions(data, multiplier=1000)
 [[1, 1, 1, 5, 6, 111, 122, 999, 1002]]
->> make_partiotions(data, max_size=3, multiplier=1000)
+>> make_partitions(data, max_size=3, multiplier=1000)
 [[1, 1, 1], [5, 6, 111], [122, 999, 1002]]
 >> data = [1, 1, 1, 5, 6, 1110, 1220, 999, 1002]
->> make_partiotions(data)
+>> make_partitions(data)
 [[1, 1, 1], [5, 6], [1110, 1220], [999, 1002]]
->> make_partiotions(data, 3)
+>> make_partitions(data, 3)
 [[1, 1, 1, 5, 6], [1110, 1220, 999, 1002]]
 ```

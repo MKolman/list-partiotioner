@@ -1,6 +1,8 @@
 # List Partiotioner
 A small function that takes a list and returns its partition such, that the sum of standard deviations of all parts is minimal.
 
+You can either import the file or run it directly to see how some test cases run.
+
 ## Parameters
 1. __data__ (_list&lt;float/int&gt;_): data to be partitioned
 1. __min_size__ (_int_): Minimum number of elements in a single partition; must

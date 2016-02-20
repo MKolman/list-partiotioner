@@ -72,18 +72,19 @@ def make_partiotions(data, min_size=2, max_size=-1, multiplier=0):
     partitioned_data = [data[i:j] for i, j in zip(part, part[1:])]
     return partitioned_data
 
-# Set the data
-data = [1, 1, 1, 5, 6, 111, 122, 999, 1002]
-print("default ".ljust(30, "-"), make_partiotions(data))
-print("default with mult. 1.5 ".ljust(30, "-"),
-      make_partiotions(data, multiplier=1.5))
-print("default with mult. 100 ".ljust(30, "-"),
-      make_partiotions(data, multiplier=100))
-print("default with mult. 1000 ".ljust(30, "-"),
-      make_partiotions(data, multiplier=1000))
-print("max_size=3 with mult. 1000 ".ljust(30, "-"),
-      make_partiotions(data, max_size=3, multiplier=1000))
-print("====================")
-data = [1, 1, 1, 5, 6, 1110, 1220, 999, 1002]
-print("default ".ljust(30, "-"), make_partiotions(data))
-print("min_size=3 ".ljust(30, "-"), make_partiotions(data, 3))
+if __name__ == "__main__":
+    # Set the data
+    data = [1, 1, 1, 5, 6, 111, 122, 999, 1002]
+    print("default ".ljust(30, "-"), make_partiotions(data))
+    print("default with mult. 1.5 ".ljust(30, "-"),
+          make_partiotions(data, multiplier=1.5))
+    print("default with mult. 100 ".ljust(30, "-"),
+          make_partiotions(data, multiplier=100))
+    print("default with mult. 1000 ".ljust(30, "-"),
+          make_partiotions(data, multiplier=1000))
+    print("max_size=3 with mult. 1000 ".ljust(30, "-"),
+          make_partiotions(data, max_size=3, multiplier=1000))
+    print("====================")
+    data = [1, 1, 1, 5, 6, 1110, 1220, 999, 1002]
+    print("default ".ljust(30, "-"), make_partiotions(data))
+    print("min_size=3 ".ljust(30, "-"), make_partiotions(data, 3))
